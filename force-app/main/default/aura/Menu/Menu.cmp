@@ -1,0 +1,15 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            Catalog electro instruments
+        </h3>
+        <div class="slds-p-around_medium lgc-bg-inverse">
+            <lightning:buttonMenu alternativeText="Show menu" variant="bare-inverse">
+                <lightning:menuItem aura:id="menuItems" value="Grinder tool" label="Grinder tool" />
+                <lightning:menuItem aura:id="menuItems" value="Electric screwdriver" label="Electric screwdriver" href="https://ctcom-c-dev-ed.builder.salesforce-communities.com/sfsites/picasso/core/config/commeditor.jsp" />
+                <lightning:menuItem aura:id="menuItems" value="Electric drill" label="Electric drill" />
+                <lightning:menuItem aura:id="menuItems" value="Milling cutter" label="Milling cutter" />
+            </lightning:buttonMenu>
+        </div>
+    </div>
+</aura:component>
