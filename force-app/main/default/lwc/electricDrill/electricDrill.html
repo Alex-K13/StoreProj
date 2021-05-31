@@ -1,0 +1,41 @@
+<template>
+    <!-- <div id="waiting" if:false={ready}>Loading…</div> -->
+    <div id="display" >
+        <div>Name: {name}</div>
+        <div>Description: {description}</div>
+        <lightning-badge label={maker}></lightning-badge>
+        <lightning-badge label={category}></lightning-badge>
+        <div>Price: {price}</div>
+        <div><img src={pictureUrl}/></div>
+        <div class="quantity-box d-flex align-items-center"
+     data-trigger="spinner"
+     id="product-quantity-spinner">
+  <div data-spin="down"
+       class="product-quantity-down-wrapper disabled">
+    <div
+        class="product-quantity-up h-100 d-flex align-items-center w-100 justify-content-center">
+      <svg width="9" height="1" viewBox="0 0 9 1" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        </svg>
+    </div>
+  </div>
+  <div class="uiInput uiInput--default uiInput--input">
+    <label class="uiLabel-left form-element__label uiLabel">
+        <span>Amount</span>
+    </label>
+    <input class="field-input" max="999999" step="1" type="text" min="1">
+</div>
+                  <div>
+            <div class="slds-m-top_small slds-m-bottom_medium">
+               
+            <lightning-button variant="success" label="To Basket" title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    
+            <div class="slds-m-vertical_medium">
+                <p> <span class="slds-text-heading_small">{clickedButtonLabel}</span></p>
+            </div>
+          </div>
+    </div>
+    </div>
+
+</template>
